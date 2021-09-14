@@ -28,6 +28,12 @@
         }
     }
 
+    @if($breakpoint == xsm) {
+        @media(min-width: 430px) {
+            @content;
+        }
+    }
+
     @if($breakpoint == xs) {
         @media(min-width: 360px) {
             @content;

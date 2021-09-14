@@ -309,7 +309,6 @@
 }
 
 .skills {
-  
   .dev-main-wrap {
       display: grid;
       grid-template-columns: auto auto;
@@ -317,7 +316,7 @@
 
       .skill-item {
         border: 1px solid rgba(179, 179, 179, 0.3);
-        padding: .5rem;
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
@@ -327,16 +326,15 @@
         grid-row: 1;
         font-family: $crazy-font;
         font-size: 1.8rem;
+        font-weight: 900;
+        background-color: rgba(8, 95, 99, 0.1);
+        padding: .5rem 0 .5rem .3rem;
+        h4 {
+          @include response(sm){font-size: 2rem;}
+        }
+        
       }
-
-
-
         .sk-link-item {
-          
-          
-          
-          
-
           a {
             display: inline-block;
             width: 100%;
@@ -344,27 +342,19 @@
             text-align: center;
             padding: .5rem;
             color: rgba(8, 95, 99, 0.8);
+            transition: all;
             &:hover {
-              background-color: rgba(8, 95, 99, 0.3);
-              cursor: pointer;
-              -webkit-transition: background-color 1s ease-out;
-              -moz-transition: background-color 1s ease-out;
-              -o-transition: background-color 1ms ease-out;
-              transition: background-color 1ms ease-out;
+              background-color: rgba(8, 95, 99, 0.1);
+              transition: .25s ease-in-out;
             }
-            
-            @include response(sm){
-              text-align: left;
-            }
-
+            @include response(sm){text-align: left;}
             img {
               display: inline;
               width: 60%;
-              @include response(sm){
-                width: 25%;
-              }
+              @include response(xs){width: 50%;}
+              @include response(xsm){width: 40%;}
+              @include response(sm){width: 25%;}
             }
-
             span {
               display: none;
               @include response(sm){
@@ -373,20 +363,10 @@
                 $g-color: rgba(8, 95, 99, 0.8);
                 margin-left: 1rem;
               }
-              @include response(md){
-               
-                font-size: 2rem;
-              }
+              @include response(md){font-size: 2rem;}
             }
-
-            
           }
-         
         }
-
-
-
-
       }
   }
 
@@ -408,7 +388,6 @@
     margin: .5rem 0 0 0;
     @include response(xs) {font-size: 2rem;}
   }
-
 }
 
 /*-- Project --*/
