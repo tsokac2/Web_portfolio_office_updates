@@ -1,0 +1,29 @@
+$g-color: rgba(8, 95, 99, 0.8);
+$dark-grey: rgba(0,0,0, 0.7);
+$light-grey: rgba(0,0,0, 0.5);
+$super-light-grey: rgba(0,0,0, 0.2);
+
+$base-font:  'Montserrat', sans-serif;
+$heding-font: 'Lato', sans-serif;
+$crazy-font: 'Kanit', sans-serif;
+
+@mixin pr-basic {
+    background-color: $dark-grey;
+    color: white;
+    font-family: $heding-font;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    ss: 1.6rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size);
+}

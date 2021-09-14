@@ -1,0 +1,433 @@
+.section {
+  padding-top: 8rem;
+  @include response(sm) {padding-top: 10rem;}
+
+  .section-squer-main-wrap{
+    padding: 2rem 0 2rem 0;
+    @include response(md) {padding: 2.5rem 0 2.5rem 0;}
+    .section-squer-wrap {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      
+      transform: rotate(45deg);
+      border: 2px solid rgba(2, 44, 67,.4);
+      @include response(sm) {
+        width: 8rem;
+        height: 8rem;
+        margin-left: 1rem;
+      }
+      @include response(md) {
+        width: 10rem;
+        height: 10rem;
+      }
+      @include response(lg) {
+        width: 12rem;
+        height: 12rem;
+        margin-left:0;
+        border: 3px solid rgba(2, 44, 67,.4);
+      }
+      .section-logo {
+        color: rgba(8, 95, 99, 0.8);
+        font-size: 3rem;
+        transform: rotate(-45deg);
+        @include response(sm) {
+          font-size: 4rem;
+        }
+        @include response(md) {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+  .mt-line-sections {margin-top: 1rem;}
+
+.home-heding {
+  font-size: 4rem;
+  font-family: $heding-font;
+  font-weight: bold;
+  color: $g-color;
+  margin-top: 1rem;
+  @include response(sm) {
+    font-size: 6rem;
+    letter-spacing: 4px;
+  }
+  @include response(md) {
+    font-size: 8rem;
+    letter-spacing: 6px;
+  }
+  @include response(lg) {
+    font-size: 10rem;
+    letter-spacing: 10px;
+    margin-top: 2rem;
+  }
+}
+.h-1 {
+  font-family: $heding-font;
+  color: $light-grey;
+  font-size: 3.5rem;
+  @include response(sm) {font-size: 5.5rem;}
+
+}
+.ts-1 {
+  font-size: 2.5rem;
+  color: $dark-grey;
+  font-weight: bold;
+  font-family: $base-font;
+  letter-spacing: 2px;
+  @include response(sm) {font-size: 3.5rem;}
+  @include response(md) {font-size: 5.5rem;}
+}
+
+.ts-2 {
+  font-family: $heding-font;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgba(200,218,211, 0.3);
+  margin: -2rem 0 0 2rem;
+  @include response(sm) {
+    margin: -3rem 0 0 2rem;
+    font-size: 5.5rem;
+  }
+  @include response(md) {
+    margin: -3.5rem 0 0 2rem;
+    font-size: 7.5rem;
+  }
+
+}
+
+.it-guru {
+  font-size: 2rem;
+  color: $g-color;
+  font-weight: bold;
+  font-family: $heding-font;
+  @include response(sm) {font-size: 3rem;}
+}
+.intro-text, .footer-intro {
+  font-family: $base-font;
+  color: black;
+  font-size: 1.8rem;
+  @include response(sm) {font-size: 2.2rem;}
+  @include response(md) {font-size: 2.5rem;}
+}
+
+.testiomonial {
+  padding-top: 2rem;
+  &-height {
+    height: 10rem;
+    @include response(sm) {
+      height: 16rem;
+    }
+    @include response(md) {
+      height: 20rem;
+    }
+  }
+  &-icon {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $g-color;
+  }
+  &-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $light-grey;
+    @include response(sm) {font-size: 2.7rem;}
+    @include response(sm) {font-size: 3.2rem;}
+
+  }
+    &-l {border-top: 1px solid $super-light-grey;}
+    &-g {border-top: 1.3px solid  $g-color;}
+    &-quote {
+        font-style: italic;
+        font-size: 1.4rem;
+        font-weight: bolder;
+        color: rgba(0,0,0, 0.9);
+        letter-spacing: 1px;
+        @include response(sm) {font-size: 2rem;}
+        @include response(sm) {font-size: 2.5rem;}
+    }
+    &-name {
+      font-weight: bold;
+      font-style: normal;
+      color: $g-color;
+      font-size: 1.8rem;
+      @include response(sm) {font-size: 2.7rem;}
+    }
+}
+
+  /*-- Profile --*/
+    .profile-img {
+      margin-top: 2rem;
+      width: 80%;
+      @include response(xs) {width: 60%;}
+      @include response(sm) {width: 100%;}
+      @include response(xl) {width: 72%;}
+
+    }
+    .about {
+      &-me {
+        font-family: $heding-font;
+        font-size: 4rem;
+        font-weight: bold;
+        color: $dark-grey;
+      }
+      &-a {
+        font-family: $crazy-font;
+        letter-spacing: 2px;
+        font-size: 6.5rem;
+        margin: -4.5rem 0;
+        color: rgba(8, 95, 99, 0.1);
+      }
+      &-intro {
+        font-family: $base-font;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        @include response(sm) {font-size: 2rem;}
+        @include response(lg) {font-size: 2.2rem;}
+       
+      .medal {
+        font-weight: bold;
+        color:$g-color;
+        }
+      }
+
+      &-details {
+        .list-group-item {
+          font-size: 1.6rem;
+          color: $light-grey;
+          font-weight: bold;
+          padding-left: 0;
+          @include response(sm) {font-size: 2rem;}
+          @include response(lg) {font-size: 2.4rem;}
+          .detail-item {
+            font-weight: bold;
+            color: $g-color;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+/*-- Education --*/
+    .expe {
+      margin-top: 1rem;
+      .ex-role {
+        margin-top: 1.5rem;
+        @include response(xs) {
+          font-size: 2rem;
+        }
+      }
+    }
+
+.ex-heding {
+  font-size: 3rem;
+  font-family: $heding-font;
+  font-weight: bold;
+  color: $g-color;
+  letter-spacing: 3px;
+  margin-top: 2rem;
+ 
+  @include response(sm) {
+    font-size: 6rem;
+    letter-spacing: 4px;
+  }
+  @include response(md) {
+    font-size: 8rem;
+    letter-spacing: 6px;
+  }
+  @include response(lg) {
+    font-size: 10rem;
+    letter-spacing: 10px;
+    margin-top: 2rem;
+  }
+}
+.ex-mr {@include response(lg){margin-right: 1.25rem;}}
+.ex-ml {@include response(lg){margin-left: 1.25rem;}}
+.ex-mt {margin-top: 2rem;}
+.sk-mt {margin-top: 1.5rem;}
+
+.ex {
+    &-date {
+      font-size: 1.8rem;
+      color: $dark-grey;
+      font-weight: bolder;
+      margin-bottom: 1.5rem;
+      @include response(sm) {
+        font-size: 2.2rem;
+      }
+    }
+    &-role {
+      font-size: 2.5rem;
+      color: $g-color;
+      font-weight: bold;
+    }
+    &-work {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      a {color: $dark-grey;}
+      i {color:rgb(1,153,203);}
+      @include response(sm) {font-size: 2rem;}
+    }
+    &-achi {
+      font-size: 1.5rem;
+      @include response(sm) {
+        font-size: 2rem;
+      }
+      line-height: 20px;
+      a {color:rgb(1,153,203);}
+    }
+
+    &-dev-support {
+      margin-top: 1rem;
+      h4 {
+        font-size: 1.5rem;
+        @include response(sm) {
+          font-size: 2rem;
+        }
+      }
+     
+      ul {
+        margin-left: 2.5rem;
+        list-style-type: circle;
+
+        li:not(:first-child) {
+          margin-top: .5rem;
+        }
+        li {
+          font-size: 1.5rem;
+          @include response(sm) {
+            font-size: 2rem;
+          }
+        }
+      }
+      
+    }
+}
+
+.skills {
+  
+  .dev-main-wrap {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: .6rem;
+
+      .skill-item {
+        border: 1px solid rgba(179, 179, 179, 0.3);
+        padding: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+      .sk-skills-sec {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        font-family: $crazy-font;
+        font-size: 1.8rem;
+      }
+
+
+
+        .sk-link-item {
+          
+          
+          
+          
+
+          a {
+            display: inline-block;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            padding: .5rem;
+            color: rgba(8, 95, 99, 0.8);
+            &:hover {
+              background-color: rgba(8, 95, 99, 0.3);
+              cursor: pointer;
+              -webkit-transition: background-color 1s ease-out;
+              -moz-transition: background-color 1s ease-out;
+              -o-transition: background-color 1ms ease-out;
+              transition: background-color 1ms ease-out;
+            }
+            
+            @include response(sm){
+              text-align: left;
+            }
+
+            img {
+              display: inline;
+              width: 60%;
+              @include response(sm){
+                width: 25%;
+              }
+            }
+
+            span {
+              display: none;
+              @include response(sm){
+                display: inline-block;
+                font-size: 1.5rem;
+                $g-color: rgba(8, 95, 99, 0.8);
+                margin-left: 1rem;
+              }
+              @include response(md){
+               
+                font-size: 2rem;
+              }
+            }
+
+            
+          }
+         
+        }
+
+
+
+
+      }
+  }
+
+  .sk-heding {
+      font-family: $crazy-font;
+      letter-spacing: 1.5px;
+      color: $light-grey;
+      font-size: 2.5rem;
+      @include response(xs) {font-size: 3rem;}
+      @include response(sm) {font-size: 4rem;}
+  }
+
+  .sk-title {
+    display: block;
+    font-family: $heding-font;
+    color: rgba(8, 95, 99, 0.9);
+    font-style: bold;
+    font-size: 1.5rem;
+    margin: .5rem 0 0 0;
+    @include response(xs) {font-size: 2rem;}
+  }
+
+}
+
+/*-- Project --*/
+    .pro {
+      margin-top: 2rem;
+      @include response(xs) {
+        border-top: 1px solid rgba(0,0,0, 0.1);
+      }
+      .ex-role {
+        margin-top: 1.5rem;
+      }
+      .c-content {
+          font-size: 1.5rem;
+          color: $dark-grey;
+          font-weight: bold;
+
+          @include response(xs) {
+              font-size: 1rem;
+          }
+        }
+    }
+}

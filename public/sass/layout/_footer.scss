@@ -1,0 +1,194 @@
+.footer {
+  &-c {
+    font-family: $heding-font;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $dark-grey;
+    letter-spacing: 1px;
+    @include response(sm) {
+      font-size: 3.5rem;
+    }
+  }
+   &-cm {
+    font-family: 'Kanit', sans-serif;
+    color: rgba(8, 95, 99, 0.1);
+    letter-spacing: 8px;
+    font-size: 6rem;
+    font-weight: bold;
+    margin-top: -5rem;
+    @include response(sm) {
+      font-size: 8.5rem;
+      letter-spacing: 4px;
+    }
+  }
+  &-intro {
+    color: $dark-grey;
+    font-size: 1.8rem;
+    @include response(sm) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .footer-line {
+    margin-bottom: 1.5rem;
+
+    @include response(sm) {
+       padding-top:1rem;
+     }
+  }
+
+  &-l {border-top: 1px solid $super-light-grey;}
+  &-g {border-top: 1.3px solid  $g-color;}
+
+  .details {
+    padding-bottom: 3rem;
+    .mt {
+      margin-top: 2rem;
+      @include response(md) {
+        margin-top: 0;
+      }
+    }    
+    &-wrap {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6rem;
+      height: 6rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 1px solid $g-color;
+      background-color: rgba(8, 95, 99, 0.1);
+      @include response(sm) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    &-icon {
+      font-size: 3rem;
+      color: $light-grey;
+      @include response(sm) {
+        font-size: 3.5rem;
+      }
+    }
+    &-location {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $light-grey;
+      margin-top: 1.5rem;
+
+      @include response(md) {
+        font-size: 2.3rem;
+      }
+   
+    }
+    &-data {
+      font-size: 1.3rem;
+      color:black;
+      font-weight: bold;
+
+      @include response(xs) {
+        font-size: 1.5rem;
+      }
+      @include response(sm) {
+        font-size: 2rem;
+      }
+      @include response(md) {
+        font-size: 2rem;
+      }
+    }
+  } 
+
+  .quick {
+    padding-top: 2.2rem;
+    &-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $dark-grey;
+      padding-bottom: 1rem;
+    }
+    &-about {
+      color: $dark-grey;
+      font-size: 1.8rem;
+      text-align: center;
+      @include response(sm) {
+        font-size: 2rem;
+      }
+    }
+    &-it {
+      color: $g-color;
+    }
+    &-list {
+      width: 50%;
+      margin-left: 25%;
+      @include response(md) {
+        width: 80%;
+        margin-left: 10%;
+      }
+      .list-item {
+        margin-bottom: 0.7rem;
+        .link-item {
+          font-size:2rem;
+          color: $dark-grey;
+          .icon {
+            margin-right: 1rem;
+            color: $g-color;
+          }
+          &:hover {
+            color: rgba(8,95,99,.4);
+            transition: width .5s ease, color .5s ease;
+            }
+          }
+      }
+      .list-item-s {
+        font-family: $heding-font;
+        margin-bottom: 0.7rem;
+        font-size: 2rem;
+        color: $dark-grey;
+      }
+    }
+  } 
+
+  .social {
+    margin-top: 2rem;
+    @include response(md) {margin-top: 2rem;}
+    &-wrap {
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 1px solid $g-color;
+      background-color: rgba(8, 95, 99, 0.1);
+      @include response(sm) {
+        width: 6rem;
+        height: 6rem;
+      }
+      .social-link {
+        font-size: 3rem;
+        color: $dark-grey;
+        @include response(sm) {
+          font-size: 4rem;
+        }
+      &:hover {
+        color: rgba(8,95,99,.4);
+        transition: width .5s ease, color .5s ease;
+        }
+      }
+    }
+  } 
+  .copy {
+      padding:2rem 0;
+    &-ts {
+      font-family: $heding-font;
+      font-size: 1.5rem;
+      color: $dark-grey;
+
+      @include response(sm) {
+        font-size: 2rem;
+      }
+    }
+  }
+}

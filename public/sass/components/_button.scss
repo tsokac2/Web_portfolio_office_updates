@@ -1,0 +1,73 @@
+.section {
+  .face-btn {border: none;}
+    .face-button {
+      height: 4rem;
+      display: inline-block;
+      border: 2px solid $g-color;
+      font-family: $heding-font;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: $dark-grey;
+      overflow: hidden;
+      @include response(xs){font-size: 1.5rem;}
+      @include response(sm){font-size: 2rem;}
+ 
+    .icon {
+      display: none;
+      @include response(xs){
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right: .5rem;
+      }
+      @include response(sm){
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+      }
+    .face-primary,
+    .face-secondary {
+      display: block;
+      padding: 0 2rem;
+      line-height: 4rem;
+      transition: margin .4s;
+    }
+    .face-primary {
+      background-color: rgba(8, 95, 99, 0.2);
+      color: $dark-grey;
+    }
+    &:hover .face-primary {
+      margin-top: -4rem;
+    }
+  }
+}
+
+.pro {
+  &-button {
+    padding: 0.5rem 1rem;
+    border: 1.5px solid $g-color;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight:bold;
+    background-color: white;
+    @include response(xs) {
+      font-size: 1.5rem;
+    }
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  .pro-btn-live {
+    color:rgb(60, 94, 204);
+    a {text-decoration: none;}
+    &:hover {font-weight: bold;}
+  }
+  .app-border {
+    border-right: 1px solid $super-light-grey;
+    @include response(sm) {
+      border-right: none;
+      border-bottom: 1px solid $super-light-grey;
+    }
+  }
+}

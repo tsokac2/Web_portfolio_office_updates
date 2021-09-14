@@ -1,0 +1,109 @@
+.navbar {
+    background-color:#ffff;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.344);
+    @include response(sm) {
+     border-bottom: none;
+     padding-top: 1.5rem;
+    }
+  .logo-ts {
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: size(xl);
+    color: $dark-grey;
+    .logo-s {
+      font-family: 'Stoke', serif;
+      font-weight: bold;
+      font-style: italic;
+      font-size: size(lg);
+      margin-left: -5px;
+    }
+    &:hover {
+      color: rgba(0,0,0,.2);
+      transition: width .5s ease, color .5s ease;
+      }
+  }
+    .top-sm-border {
+      @include response(sm) {
+        margin-top: .5vh;
+        border-top: 0.5px solid rgba(0, 0, 0, .2);
+      }
+}
+  .colaps-icon {
+    font-size: size(lg);
+  }
+
+  .navbar-nav {
+    background-color: rgba(142, 229, 236, 0.1);
+    @include response(sm){
+      background-color: rgb(255, 255, 255);
+    }
+  }
+  .nav-item {
+      @include response(sm) {
+        border-right: 1px dotted rgba(140, 140, 140, .5);
+      }
+      
+      @include response(md) {
+        padding: 0 1rem 0 1rem;
+      }
+
+      .nav-link {
+      width: 100%;
+      padding-left: 2rem;
+      font-family: 'Lato', sans-serif;
+      font-size: size(sm);
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: $dark-grey;
+
+      @include response(sm) {
+        font-size: 2.2rem;
+        margin-right: 1.5rem;
+      }
+      
+      @include response(md) {
+        font-size: size(xl);        
+      }
+
+      &:hover {
+        color: rgba(8,95,99,.4);
+        transition: width .5s ease, color .5s ease;
+        }
+        }
+       .sliding-middle-out {
+         display: inline-block;
+         position: relative;
+         padding-bottom: 1.5px;
+       }
+       .sliding-middle-out:after {
+         content: '';
+         display: block;
+         margin: auto;
+         height: 1px;
+         width: 0px;
+         background: transparent;
+         transition: width .5s ease, background-color .5s ease;
+       }
+       .sliding-middle-out:hover:after {
+         width: 100%;
+         background: #000;
+       }
+    }
+    .ho-item, .ex-item, .pr-item {
+      background-color: rgba(122, 196, 207, 0.1);
+      border-right: 2px solid rgba(8,95,99,.4);
+      border-left: 2px solid rgba(8,95,99,.4);
+      
+      @include response(sm){
+        background-color: rgb(255, 255, 255);
+        border-left: none;
+        border-right: 1px dotted rgba(140, 140, 140, .5);
+      }
+    }
+
+    .pr-item {
+      @include response(sm){
+        border-right: none;
+      }
+    }
+}
